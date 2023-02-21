@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+  <title>Conversor de Moedas</title>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1 class="titulo">Conversor de Moedas</h1>
+    <img class="logo" src="./src/imagens/bate-papo_318-450881.png" alt="imagem cifrão">
+  </header>
+
+    <div>
+      <p class="container">Converta moedas rapidamente com <br>o conversor de moedas</p>
+      <img class="logo-alura" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" alt="logo-alura">
+    </div>
+
+    <div class="valores">
+      <div class="seletorMoeda">
+    <select name="moedasde" id="moedasde">
+      <option value="de">Converter de</option>
+      <option value="USD">Dolar</option>
+      <option value="BRL">Real</option>
+      <option value="EUR">Euro</option>
+    </select>
+     <select name="moedaspara" id="moedaspara">
+      <option value="para">Para</option>
+      <option value="USD">Dolar</option>
+      <option value="BRL">Real</option>
+      <option value="EUR">Euro</option>
+    </select>
+    </div>
+      <label for="converter">
+      <input type="number" id="converter">
+     </label>
+    <div id="resultado"><div id="value">VALOR: <span class="moedaSimbolo"></span><span id="reais"></span></div></div>
+    </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

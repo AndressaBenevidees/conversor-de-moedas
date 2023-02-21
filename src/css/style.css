@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap');
+
+* {
+  margin: 15px 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #78b392f8;
+  overflow: hidden;
+  max-width: 1400px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.cabecalho .logo {
+  width: 10%;
+  height: 0%;
+  padding: 10px;
+  margin: 16px 0px;
+}
+
+@media (max-width:1200px) {
+  .cabecalho .logo {
+    width: 65px;
+    margin: 0 160px;
+    margin-left: 61%;
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width:500px) {
+  .cabecalho .logo {
+    width: 60px;
+    margin: 0 auto;
+    margin-left: 50%;
+    margin-top: 53px;
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width:320px) {
+  .cabecalho .logo {
+    width: 60px;
+    margin-left: 48%;
+    margin-top: 53px;
+    padding: 10px 0px;
+  }
+}
+
+.cabecalho .titulo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 50px 0px;
+  font-family: 'Bebas Neue';
+  font-size: 3.8em;
+}
+
+@media (max-width:1200px) {
+  .cabecalho .titulo {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2.9em;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width:500px) {
+  .cabecalho .titulo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 5px 60px;
+    padding: 0px;
+  }
+}
+
+@media (max-width:320px) {
+  .cabecalho .titulo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 5px 30px;
+    padding: 0px;
+  }
+}
+
+.container {
+  text-align: center;
+  font-size: 40px;
+  line-height: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: -66px;
+  margin-bottom: 56px;
+}
+
+@media(max-width:1200px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+}
+
+@media(max-width:500px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin: 0 auto;
+    margin-top: -44px;
+  }
+}
+
+@media(max-width:320px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin: 0 auto;
+    margin-top: -60px;
+  }
+}
+
+select {
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px !important;
+}
+
+.seletorMoeda {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.seletorMoeda #moedasde {
+  margin-right: 10px;
+}
+
+@media (max-width:1200px) {
+  #moedaspara {
+    display: inline-block;
+    margin: -100px auto;
+  }
+
+  #moedasde {
+    display: inline-block;
+    margin: -100px 0px 0px 440px;
+  }
+}
+
+@media(max-width:500px) {
+  #moedaspara {
+    max-width: 10%;
+    margin-top: -90px;
+    margin-left: 10px;
+  }
+
+  #moedasde {
+    max-width: 16%;
+    margin: -90px 0px 0px 480px;
+  }
+}
+
+.seletorMoeda #moedasde,
+.seletorMoeda #moedaspara {
+  width: 140px;
+  height: 30px;
+  border: none;
+  outline: 0;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.logo-alura {
+  width: 300px;
+  position: fixed;
+  bottom: 183px;
+  right: 533px;
+  margin-top: 40px;
+}
+
+@media (max-width:1400px) {
+  .logo-alura {
+    position: initial;
+    max-width: 50%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -30px;
+    align-items: center;
+  }
+}
+
+@media(max-width:500px) {
+  .logo-alura {
+    max-width: 55%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 36px;
+  }
+}
+
+@media(max-width:320px) {
+  .logo-alura {
+    max-width: 55%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+.converter {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  background: #ff7200;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.converter:hover {
+  background: #000;
+  color: #fff;
+  padding: 15px 25px;
+}
+
+#converter {
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 21px;
+  padding-left: 10px;
+}
+
+@media (max-width:1200px) {
+  #converter {
+    width: 200%;
+    display: inline-block;
+    margin: -15px 70px 145px 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width:500px) {
+  #converter {
+    max-width: 180%;
+    margin: 0px 100px 140px -68px;
+    font-size: 1rem;
+  }
+}
+
+.valores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:1200px) {
+  .valores {
+    position: initial;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: -48px;
+  }
+}
+
+@media (max-width:500px) {
+  .valores {
+    position: initial;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: -140px;
+  }
+}
+
+.coins {
+  width: 50px;
+}
+
+#ifen {
+  animation: piscando 1s infinite;
+}
+
+#value {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  background: #17663b;
+  border-radius: 5px;
+  padding: 10px 30px 10px 20px;
+  -webkit-box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.75);
+  margin-left: 40px;
+}
+
+@media (max-width:1200px) {
+  #resultado #value {
+    margin: 30px 60px 50px -250px;
+  }
+}
+
+@media (max-width:500px) {
+  #resultado #value {
+    margin: 50px 100px 50px -278px;
+    padding: 5px 50px;
+  }
+}
+
+@keyframes piscando {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes trocarCor {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
